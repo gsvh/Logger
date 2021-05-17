@@ -1,0 +1,12 @@
+E:\Coding\VS19_Workspace\AIE\LoggerV1\LoggerV1\obj\Debug\LoggerV1.csprojAssemblyReference.cache
+E:\Coding\VS19_Workspace\AIE\LoggerV1\LoggerV1\obj\Debug\LoggerV1.Properties.Resources.resources
+E:\Coding\VS19_Workspace\AIE\LoggerV1\LoggerV1\obj\Debug\LoggerV1.csproj.GenerateResource.cache
+E:\Coding\VS19_Workspace\AIE\LoggerV1\LoggerV1\obj\Debug\LoggerV1.csproj.CoreCompileInputs.cache
+E:\Coding\VS19_Workspace\AIE\LoggerV1\LoggerV1\bin\Debug\LoggerV1.exe.config
+E:\Coding\VS19_Workspace\AIE\LoggerV1\LoggerV1\bin\Debug\LoggerV1.exe
+E:\Coding\VS19_Workspace\AIE\LoggerV1\LoggerV1\bin\Debug\LoggerV1.pdb
+E:\Coding\VS19_Workspace\AIE\LoggerV1\LoggerV1\obj\Debug\LoggerV1.exe
+E:\Coding\VS19_Workspace\AIE\LoggerV1\LoggerV1\obj\Debug\LoggerV1.pdb
+E:\Coding\VS19_Workspace\AIE\LoggerV1\LoggerV1\obj\Debug\LoggerV1.Logger.resources
+E:\Coding\VS19_Workspace\AIE\LoggerV1\LoggerV1\obj\Debug\LoggerV1.WorkingOnActivity.resources
+E:\Coding\VS19_Workspace\AIE\LoggerV1\LoggerV1\obj\Debug\LoggerV1.MyLog.resources
