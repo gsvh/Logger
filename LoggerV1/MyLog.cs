@@ -74,19 +74,23 @@ namespace LoggerV1
 
         private void btnExport_Click(object sender, EventArgs e) //Export as PDF
         {
-            
+
             if (txtName.Text == "") // if name field is empty
             {
-                MessageBox.Show("Empty field","Invalid Input");
+                MessageBox.Show("Empty field", "Invalid Input");
             }
-            if(sfd.ShowDialog() == DialogResult.OK)
+            else
             {
-                sfd.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments); //sets the default directory to user's Documents folder
-                string docName = sfd.FileName; //gets filename that user entered
-                PDFDocument logDoc = new PDFDocument(); //create new instance
-                logDoc.CreateDocuments(txtName.Text, docName); // new document with username and document name
-                MyLog ML = new MyLog();
-                ML.Show(); //reset
+                if (sfd.ShowDialog() == DialogResult.OK && txtName.Text != "")
+                {
+                    sfd.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments); //sets the default directory to user's Documents folder
+                    string docName = sfd.FileName; //gets filename that user entered
+                    PDFDocument logDoc = new PDFDocument(); //create new instance
+                    logDoc.CreateDocuments(txtName.Text, docName); // new document with username and document name
+                    MyLog ML = new MyLog();
+                    ML.Show(); //reset
+                    this.Hide();
+                }
             }
         }
 

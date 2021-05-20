@@ -48,7 +48,7 @@ namespace LoggerV1
                 int x = 30;
                            // id, a,  n,   t
                 int[] yPos = { 0, y, 2*y, 3*y };            //four default tab postions
-                int[] xPos = { 0, x, 3*x, 14*x };           //default line positions for group of 4 items
+                int[] xPos = { 0, x, 4*x, 14*x };           //default line positions for group of 4 items
 
                 // Lists of strings and Labels for ID, Date, Activity, Activity Notes and Time Spent
                 List<string> idS = new List<string>();
@@ -83,12 +83,12 @@ namespace LoggerV1
                 page.Elements.Add(lblTotalTime);
 
                 //Table Headers
-                string tID = "ID";
-                Label lblID = new Label(tID, xPos[0], 12 * y, 504, 100, fontBold, fontSize, TextAlign.Left);
-                page.Elements.Add(lblID);
+                //string tID = "ID";
+                //Label lblID = new Label(tID, xPos[0], 12 * y, 504, 100, fontBold, fontSize, TextAlign.Left);
+                //page.Elements.Add(lblID);
 
-                string tDate = "Date";
-                Label lblDate = new Label(tDate, xPos[1], 12 * y, 504, 100, fontBold, fontSize, TextAlign.Left);
+                string tDate = "Date & Time";
+                Label lblDate = new Label(tDate, xPos[0], 12 * y, 504, 100, fontBold, fontSize, TextAlign.Left);
                 page.Elements.Add(lblDate);
 
                 string tActNote = "Activity & Notes";
@@ -108,14 +108,11 @@ namespace LoggerV1
                 int idx = Array.IndexOf(c.subjects, subject); // idx is index of the subject in the subjects array
                 for (int i = _i; i < c.SubjectLogs[idx].Rows.Count; i++)
                 {
-                    //ID
-                    idS.Add(c.SubjectLogs[idx].Rows[i][0].ToString() + ".");     
-                    idL.Add(new Label(idS[i-_i], xPos[0], yPos[0], 504, 100, fontBold, fontSize, TextAlign.Left)); 
-                    page.Elements.Add(idL[i-_i]);
+                
 
                     //Date
-                    dateS.Add(c.SubjectLogs[idx].Rows[i][1].ToString().Replace(" 00:00:00","").Replace("/","-"));     // removes the hr:min:sec from datetime string
-                    dateL.Add(new Label(dateS[i-_i], xPos[1], yPos[0], 504, 100, font, fontSize-2, TextAlign.Left));
+                    dateS.Add(c.SubjectLogs[idx].Rows[i][1].ToString().Replace("/", "-")) ;     // replaces / with - in datetime string
+                    dateL.Add(new Label(dateS[i-_i], xPos[0], yPos[0], 504, 100, font, fontSize-2, TextAlign.Left));
                     page.Elements.Add(dateL[i - _i]);
 
                     //Activity
