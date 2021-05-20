@@ -69,7 +69,7 @@ namespace LoggerV1
 
             for (int i = 0; i < Subjects.Rows.Count; i++)       // Logs activities for each subject individually, then adds the log to a list (SubjectLogs)
             {
-                string getSubLogs = "SELECT ID, Date, Activity, ActivityNotes, TimeSpent FROM UserActivityLog WHERE Subject = @sub";
+                string getSubLogs = "SELECT ID, Date, Activity, ActivityNotes, TimeSpent FROM UserActivityLog WHERE Subject = @sub ORDER BY Date ASC";
                 SqlCommand cmdSL = new SqlCommand(getSubLogs, con);
                 cmdSL.Parameters.AddWithValue("@Sub", Subjects.Rows[i][1].ToString());
                 SqlDataAdapter sdaSL = new SqlDataAdapter(cmdSL);
