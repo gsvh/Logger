@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>F:\|C:\Users\George\Desktop\New folder\|C:\Users\George\Desktop\New Folder\|C:\Users\George\Desktop\|publish\</PublishUrlHistory>
-    <InstallUrlHistory />
+    <PublishUrlHistory>F:\|C:\Users\George\Desktop\New folder\|ftp://ftp.gear.host/|F:\New folder\|C:\Users\George\Desktop\New Folder\</PublishUrlHistory>
+    <InstallUrlHistory>http://ysterfontein.gear.host/</InstallUrlHistory>
     <SupportUrlHistory>https://github.com/gsvh</SupportUrlHistory>
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />

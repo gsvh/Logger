@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data;
 using System.Data.SqlClient;
+using System.Reflection;
 
 namespace LoggerV1
 {
     class Connection
     {
         //connection to LOGGER.mdf file in LocalDB
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Coding\VS19_Workspace\AIE\LoggerV1\LOGGER.mdf;Integrated Security=True;Connect Timeout=30"); ///SqlConnection con = new SqlConnection(@"Data Source=LOGGER.mdf;Initial Catalog=LOGGER;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-       
+        SqlConnection con = new SqlConnection(@"Server=./SqlExpress;Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Public\Documents\Logger\LOGGER.mdf;Database=LOGGER.mdf;Integrated Security=True");
+
         //public datatables and arrays
         public DataTable Subjects = new DataTable();
-        public DataTable Activities = new DataTable();
+        public DataTable Activities = new DataTable(); 
         public DataTable ID = new DataTable();
         public DataTable Log = new DataTable();
         public List<DataTable> SubjectLogs = new List<DataTable>(); //list of logs for each subject individually
@@ -161,6 +162,7 @@ namespace LoggerV1
 
             return c;
         }
+
 
 
 

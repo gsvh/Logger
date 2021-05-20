@@ -22,11 +22,13 @@
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
+    <MapFileExtensions>false</MapFileExtensions>
     <SupportUrl>https://github.com/gsvh</SupportUrl>
+    <TargetCulture>en-ZA</TargetCulture>
     <ProductName>Logger</ProductName>
     <PublisherName>George S van Heerden</PublisherName>
-    <ApplicationRevision>7</ApplicationRevision>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>33</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -83,10 +85,10 @@
     <OutputPath>bin\x64\Release\</OutputPath>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>D7A1E4ED1CBAE129866E35279598B86712314FA6</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>5754DDEA946CB065FAD82BEFE30F8C2D894377CB</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>LoggerV1_1_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>LoggerV1_2_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -101,9 +103,20 @@
     <StartupObject>LoggerV1.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>Custom</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>LoggerV1_2_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
-    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
-      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.10.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.8.10\lib\net40\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
       <HintPath>..\packages\Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
@@ -111,8 +124,8 @@
     <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
       <HintPath>..\packages\Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
     </Reference>
-    <Reference Include="DynamicPDF.NETFramework40, Version=11.10.0.43652, Culture=neutral, PublicKeyToken=09b5ce0d5c0a9d8b, processorArchitecture=MSIL">
-      <HintPath>..\packages\ceTe.DynamicPDF.CoreSuite.NET.11.10.0\lib\net40\DynamicPDF.NETFramework40.dll</HintPath>
+    <Reference Include="DynamicPDF.NETFramework40, Version=11.11.0.43757, Culture=neutral, PublicKeyToken=09b5ce0d5c0a9d8b, processorArchitecture=MSIL">
+      <HintPath>..\packages\ceTe.DynamicPDF.CoreSuite.NET.11.11.0\lib\net40\DynamicPDF.NETFramework40.dll</HintPath>
     </Reference>
     <Reference Include="itext.barcodes, Version=7.1.15.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>..\packages\itext7.7.1.15\lib\net45\itext.barcodes.dll</HintPath>
@@ -145,11 +158,6 @@
       <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-    </Reference>
     <Reference Include="System">
       <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
@@ -173,16 +181,6 @@
     </Compile>
     <Compile Include="Logger.Designer.cs">
       <DependentUpon>Logger.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LOGGERDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LOGGERDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="LOGGERDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LOGGERDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="PDFDocument.cs" />
     <Compile Include="MyLog.cs">
@@ -213,35 +211,14 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="WorkingOnActivity.resx">
       <DependentUpon>WorkingOnActivity.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="LOGGERDataSet.xsc">
-      <DependentUpon>LOGGERDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="LOGGERDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>LOGGERDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="LOGGERDataSet.xss">
-      <DependentUpon>LOGGERDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="LOGGERDataSet1.xsc">
-      <DependentUpon>LOGGERDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="LOGGERDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>LOGGERDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="LOGGERDataSet1.xss">
-      <DependentUpon>LOGGERDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="LoggerV1_1_TemporaryKey.pfx" />
-    <None Include="LoggerV1_TemporaryKey.pfx" />
+    <None Include="LoggerV1_2_TemporaryKey.pfx" />
     <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -253,7 +230,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -266,16 +245,28 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SqlLocalDB.15.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2019 Express LocalDB</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adatasetup.xml" />
     <Content Include="icon_mkx_icon.ico" />
-    <Content Include="LOGGER.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="LOGGER_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>LOGGER.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="adatasetup.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

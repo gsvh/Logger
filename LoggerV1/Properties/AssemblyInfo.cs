@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Logger")]
 [assembly: AssemblyDescription("Log activities for different subjects and export database to PDF.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Tauraco Digital")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("LoggerV1")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]

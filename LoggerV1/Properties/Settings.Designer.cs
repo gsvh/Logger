@@ -22,16 +22,5 @@ namespace LoggerV1.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\LOGGER.mdf;In" +
-            "tegrated Security=True;Connect Timeout=30")]
-        public string LOGGER_ConnectionString {
-            get {
-                return ((string)(this["LOGGER_ConnectionString"]));
-            }
-        }
     }
 }

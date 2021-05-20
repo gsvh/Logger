@@ -36,12 +36,12 @@ namespace LoggerV1
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyLog));
-            this.lOGGERDataSet = new LoggerV1.LOGGERDataSet();
+            //this.lOGGERDataSet = new LoggerV1.LOGGERDataSet();
             this.userActivityLogBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.userActivityLogTableAdapter = new LoggerV1.LOGGERDataSetTableAdapters.UserActivityLogTableAdapter();
+            //this.userActivityLogTableAdapter = new LoggerV1.LOGGERDataSetTableAdapters.UserActivityLogTableAdapter();
             this.subjectsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.subjectsTableAdapter = new LoggerV1.LOGGERDataSetTableAdapters.SubjectsTableAdapter();
-            this.activitiesTableAdapter = new LoggerV1.LOGGERDataSetTableAdapters.ActivitiesTableAdapter();
+            //this.subjectsTableAdapter = new LoggerV1.LOGGERDataSetTableAdapters.SubjectsTableAdapter();
+            //this.activitiesTableAdapter = new LoggerV1.LOGGERDataSetTableAdapters.ActivitiesTableAdapter();
             this.userActivityLogBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.subjectsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dgvLog = new System.Windows.Forms.DataGridView();
@@ -60,7 +60,7 @@ namespace LoggerV1
             this.activitiesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.userActivityLogBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.txtName = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.lOGGERDataSet)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.lOGGERDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userActivityLogBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.subjectsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userActivityLogBindingSource1)).BeginInit();
@@ -73,40 +73,40 @@ namespace LoggerV1
             // 
             // lOGGERDataSet
             // 
-            this.lOGGERDataSet.DataSetName = "LOGGERDataSet";
-            this.lOGGERDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            //this.lOGGERDataSet.DataSetName = "LOGGERDataSet";
+            //this.lOGGERDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // userActivityLogBindingSource
             // 
             this.userActivityLogBindingSource.DataMember = "UserActivityLog";
-            this.userActivityLogBindingSource.DataSource = this.lOGGERDataSet;
+            //this.userActivityLogBindingSource.DataSource = this.lOGGERDataSet;
             // 
             // userActivityLogTableAdapter
             // 
-            this.userActivityLogTableAdapter.ClearBeforeFill = true;
+            //this.userActivityLogTableAdapter.ClearBeforeFill = true;
             // 
             // subjectsBindingSource
             // 
             this.subjectsBindingSource.DataMember = "Subjects";
-            this.subjectsBindingSource.DataSource = this.lOGGERDataSet;
+           // this.subjectsBindingSource.DataSource = this.lOGGERDataSet;
             // 
             // subjectsTableAdapter
             // 
-            this.subjectsTableAdapter.ClearBeforeFill = true;
+            //this.subjectsTableAdapter.ClearBeforeFill = true;
             // 
             // activitiesTableAdapter
             // 
-            this.activitiesTableAdapter.ClearBeforeFill = true;
+            //this.activitiesTableAdapter.ClearBeforeFill = true;
             // 
             // userActivityLogBindingSource1
             // 
             this.userActivityLogBindingSource1.DataMember = "UserActivityLog";
-            this.userActivityLogBindingSource1.DataSource = this.lOGGERDataSet;
+            //this.userActivityLogBindingSource1.DataSource = this.lOGGERDataSet;
             // 
             // subjectsBindingSource1
             // 
-            this.subjectsBindingSource1.DataMember = "Subjects";
-            this.subjectsBindingSource1.DataSource = this.lOGGERDataSet;
+            //this.subjectsBindingSource1.DataMember = "Subjects";
+            //this.subjectsBindingSource1.DataSource = this.lOGGERDataSet;
             // 
             // dgvLog
             // 
@@ -234,20 +234,15 @@ namespace LoggerV1
             this.label1.TabIndex = 7;
             this.label1.Text = "Your name:";
             // 
-            // activitiesBindingSource1
-            // 
-            this.activitiesBindingSource1.DataMember = "Activities";
-            this.activitiesBindingSource1.DataSource = this.lOGGERDataSet;
-            // 
             // activitiesBindingSource
             // 
             this.activitiesBindingSource.DataMember = "Activities";
-            this.activitiesBindingSource.DataSource = this.lOGGERDataSet;
+           // this.activitiesBindingSource.DataSource = this.lOGGERDataSet;
             // 
-            // userActivityLogBindingSource2
+            // userActivityLogBindingSource
             // 
-            this.userActivityLogBindingSource2.DataMember = "UserActivityLog";
-            this.userActivityLogBindingSource2.DataSource = this.lOGGERDataSet;
+            this.userActivityLogBindingSource.DataMember = "UserActivityLog";
+            //this.userActivityLogBindingSource2.DataSource = this.lOGGERDataSet;
             // 
             // txtName
             // 
@@ -275,7 +270,7 @@ namespace LoggerV1
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MyLog";
             this.Load += new System.EventHandler(this.MyLog_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.lOGGERDataSet)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.lOGGERDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userActivityLogBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.subjectsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userActivityLogBindingSource1)).EndInit();
@@ -290,12 +285,12 @@ namespace LoggerV1
         }
 
         #endregion
-        private LOGGERDataSet lOGGERDataSet;
+        //private LOGGERDataSet lOGGERDataSet;
         private System.Windows.Forms.BindingSource userActivityLogBindingSource;
-        private LOGGERDataSetTableAdapters.UserActivityLogTableAdapter userActivityLogTableAdapter;
+        //private LOGGERDataSetTableAdapters.UserActivityLogTableAdapter userActivityLogTableAdapter;
         private System.Windows.Forms.BindingSource subjectsBindingSource;
-        private LOGGERDataSetTableAdapters.SubjectsTableAdapter subjectsTableAdapter;
-        private LOGGERDataSetTableAdapters.ActivitiesTableAdapter activitiesTableAdapter;
+       // private LOGGERDataSetTableAdapters.SubjectsTableAdapter subjectsTableAdapter;
+        //private LOGGERDataSetTableAdapters.ActivitiesTableAdapter activitiesTableAdapter;
         private System.Windows.Forms.BindingSource userActivityLogBindingSource1;
         private System.Windows.Forms.BindingSource subjectsBindingSource1;
         private System.Windows.Forms.DataGridView dgvLog;

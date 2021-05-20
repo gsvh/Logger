@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="LoggerV1.exe" version="1.0.0.33" publicKeyToken="fb194f38d801570b" language="en-ZA" processorArchitecture="amd64" type="win32" />
+  <description asmv2:iconFile="icon_mkx_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="LoggerV1" version="1.0.0.0" publicKeyToken="FB194F38D801570B" language="neutral" processorArchitecture="amd64" />
+    <commandLine file="LoggerV1.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet class="System.Security.PermissionSet" version="1" ID="Custom" SameSite="site" Unrestricted="true" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BouncyCastle.Crypto.dll" size="2930352">
+      <assemblyIdentity name="BouncyCastle.Crypto" version="1.8.10.0" publicKeyToken="0E99375E54769942" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>B0mLmQqoSRbsbYTiTN+ZoKwOJl/z5TWYqbFTKFvSNZQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Common.Logging.dll" size="45056">
+      <assemblyIdentity name="Common.Logging" version="3.4.1.0" publicKeyToken="AF08829B84F0328E" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>IVUom2LioFwyL36yP/ufh/5IkjvsEnIqEX0AhXNwuw4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Common.Logging.Core.dll" size="10240">
+      <assemblyIdentity name="Common.Logging.Core" version="3.4.1.0" publicKeyToken="AF08829B84F0328E" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PYBjJr/OndrN2SK9+cluRd6RcvRaigr0zFFTgc6gGYQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DynamicPDF.NETFramework40.dll" size="19286624">
+      <assemblyIdentity name="DynamicPDF.NETFramework40" version="11.11.0.43757" publicKeyToken="09B5CE0D5C0A9D8B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1N5/UdD5ZkSO7Q3g0ZApSM+0fpvPAlfO4HISk17q7fY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="itext.barcodes.dll" size="145920">
+      <assemblyIdentity name="itext.barcodes" version="7.1.15.0" publicKeyToken="8354AE6D2174DDCA" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4Fs7b/1/wj4I4trYehP3jhFHoYzpwhsG9eu0ASMGn1c=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="itext.forms.dll" size="123904">
+      <assemblyIdentity name="itext.forms" version="7.1.15.0" publicKeyToken="8354AE6D2174DDCA" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>2ZE9BGa+0Gx//O3ak//FH7I0PNKRMUZSXv9+1lL1J3c=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="itext.io.dll" size="1596928">
+      <assemblyIdentity name="itext.io" version="7.1.15.0" publicKeyToken="8354AE6D2174DDCA" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Yjf1HGGBnR1VBs29VNI7crXRaLNy/QOgvznRnivgSHU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="itext.kernel.dll" size="943616">
+      <assemblyIdentity name="itext.kernel" version="7.1.15.0" publicKeyToken="8354AE6D2174DDCA" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>oZiMJEY2WZ+JTvOV0+4w8TOtIOrYersCKMPtN5TO7C4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="itext.layout.dll" size="375808">
+      <assemblyIdentity name="itext.layout" version="7.1.15.0" publicKeyToken="8354AE6D2174DDCA" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>RkUn0D51ZplscPhbZS+PvOrvlEuSFm026ieiYHjIRO4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="itext.pdfa.dll" size="91136">
+      <assemblyIdentity name="itext.pdfa" version="7.1.15.0" publicKeyToken="8354AE6D2174DDCA" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Vf27OxLzf7iy9xx6mSXniMuoVyHP4nbm80+f7urFt7k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="itext.sign.dll" size="95232">
+      <assemblyIdentity name="itext.sign" version="7.1.15.0" publicKeyToken="8354AE6D2174DDCA" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>SUrqU1tMdXbB0+Hq7n/3gJOyEFu4NEyt4LWfmVTqLrc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="itext.styledxmlparser.dll" size="332800">
+      <assemblyIdentity name="itext.styledxmlparser" version="7.1.15.0" publicKeyToken="8354AE6D2174DDCA" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vYIqFY4koJ8iqLe7LGEhiSh2rKkzl76FQfMmRerCiqE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="itext.svg.dll" size="126976">
+      <assemblyIdentity name="itext.svg" version="7.1.15.0" publicKeyToken="8354AE6D2174DDCA" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1IJfE/vg03nPrwg3uGKcOf5z2nfyxjwCwN598PPoGbY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="itextsharp.dll" size="2621440">
+      <assemblyIdentity name="itextsharp" version="5.5.13.2" publicKeyToken="8354AE6D2174DDCA" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>eHzDzlCnRkcQ0EkX0/5p5R4wCsI7jUQkwD9OVb4QdZk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LoggerV1.exe" size="106984">
+      <assemblyIdentity name="LoggerV1" version="1.0.0.0" publicKeyToken="FB194F38D801570B" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ikQyuKWKNTL78D1oyHqs7fXxo80SCGqaH1VwA4VWt6g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="adatasetup.xml" size="81">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sCxa5ldncnBXei0R6KUrpEZVG4rQk6hreHRdDB6+rFk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icon_mkx_icon.ico" size="17022">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QC0qbW5u//gK1sPaNLO8S+0MqCtz5jBEnGp41se9594=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="LoggerV1.exe.config" size="1387">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xhvaCXQc5j/1vTXbR5MYv59BrGsQlnHRoOILeyh+sxw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=GEORGE-HOMEBOYE\George" issuerKeyHash="2d8231a0c268929fbc54635d200524f6281b33dc" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>0gS1G/d1KhLX0O2kb4VeI8Up3FjozHso1Jqo9sCDIRQ=</DigestValue></Reference></SignedInfo><SignatureValue>Saz+AElqYNJf7PNoCl1BVsjpJdiIvuHEs9GAR5lKiNSQOb/yBfP3UgiITyphW+qhq3Kkx9FDANsEj/2JLFBhyiDWo9I8b3MoTw/0guOcCU12vyrzH1F2KqOJh+3v27JBbL5s+Hi/i7YIno3pQ0f8P5DdnmU9qQ3z2A8T73KAmkY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tzD3fEn79y8Jo/PnDKYNej7c/kkfABRTwmH1FjvtwoacypwL2OpnhPlhEGAZyek9yc356B+wq76imvxsWKLdcOKLaBSxsvj13TtIpZ10+bXeXbjaDGFqmxFXig5ScpMD8x4P/T/+4rLKHR3qOyQqByGA2UxzKaViWNZsmTmnUC0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="142183c0f6a89ad4287bcce858dc29c5235e856fa4edd0d7122a75f71bb504d2" Description="" Url=""><as:assemblyIdentity name="LoggerV1.exe" version="1.0.0.33" publicKeyToken="fb194f38d801570b" language="en-ZA" processorArchitecture="amd64" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=GEORGE-HOMEBOYE\George</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>HoUESmj4y/DzySMmCH9jLKQUlpEAAQRU+6znOJKPJcg=</DigestValue></Reference></SignedInfo><SignatureValue>rEL6ca+vZRwjZcYz+4/ceWYLvYSYLpatiwDL7AVx2FR+IEIMRgUypp/edPg/Wyirfe/oE86ckiKvzn9VunexIcsok3ujGoqcEnonAf7AQJtRPOaNQoJrf8kJQCmnNyTpuIbNWmfg1aKw5P//y0vqtn1W6j1w2f+gu5aqNSpeH/c=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tzD3fEn79y8Jo/PnDKYNej7c/kkfABRTwmH1FjvtwoacypwL2OpnhPlhEGAZyek9yc356B+wq76imvxsWKLdcOKLaBSxsvj13TtIpZ10+bXeXbjaDGFqmxFXig5ScpMD8x4P/T/+4rLKHR3qOyQqByGA2UxzKaViWNZsmTmnUC0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQOkV23mM1+adKbBGoTAVG8DANBgkqhkiG9w0BAQsFADA3MTUwMwYDVQQDHiwARwBFAE8AUgBHAEUALQBIAE8ATQBFAEIATwBZAEUAXABHAGUAbwByAGcAZTAeFw0yMTA1MTgxMTAzMzZaFw0yMjA1MTgxNzAzMzZaMDcxNTAzBgNVBAMeLABHAEUATwBSAEcARQAtAEgATwBNAEUAQgBPAFkARQBcAEcAZQBvAHIAZwBlMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC3MPd8Sfv3Lwmj8+cMpg16Ptz+SR8AFFPCYfUWO+3ChpzKnAvY6meE+WEQYBnJ6T3JzfnoH7CrvqKa/GxYot1w4otoFLGy+PXdO0ilnXT5td5duNoMYWqbEVeKDlJykwPzHg/9P/7issodHeo7JCoHIYDZTHMppWJY1myZOadQLQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBABNo8jeBevn0qI50v87yRwgBdCGks1OeiGdxXqjK88B3B6wM5sitFqjJeozLzJrPe+k3efSS8xkavtQAP3R8P/CIktPvxIAE79786wmUedrjB7yoGWNm4uNWoNtZDAXnUiLAjJs2mrrrwekz7wo8nzIcus8eJ5+Ud+8uT7voDmkq</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

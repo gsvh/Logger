@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="LoggerV1.exe" version="1.0.0.6" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="LoggerV1.exe" version="1.0.0.10" publicKeyToken="0000000000000000" language="en-ZA" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="icon_mkx_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -10,22 +10,22 @@
   <trustInfo>
     <security>
       <applicationRequestMinimum>
-        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
         <defaultAssemblyRequest permissionSetReference="Custom" />
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
-        <!--
-          UAC Manifest Options
-          If you want to change the Windows User Account Control level replace the
-          requestedExecutionLevel node with one of the following.
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         If you want to utilize File and Registry Virtualization for backward
-         compatibility then delete the requestedExecutionLevel node.
-    -->
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
     </security>
@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BouncyCastle.Crypto.dll" size="2572288">
-      <assemblyIdentity name="BouncyCastle.Crypto" version="1.8.6.0" publicKeyToken="0E99375E54769942" language="neutral" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BouncyCastle.Crypto.dll" size="2930352">
+      <assemblyIdentity name="BouncyCastle.Crypto" version="1.8.10.0" publicKeyToken="0E99375E54769942" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>VTDf+Xa8DIiQdrl8ppW9uX7wf2NEnTL4k+0yOY7Yv+Y=</dsig:DigestValue>
+        <dsig:DigestValue>B0mLmQqoSRbsbYTiTN+ZoKwOJl/z5TWYqbFTKFvSNZQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -79,14 +79,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DynamicPDF.NETFramework40.dll" size="18983520">
-      <assemblyIdentity name="DynamicPDF.NETFramework40" version="11.10.0.43652" publicKeyToken="09B5CE0D5C0A9D8B" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DynamicPDF.NETFramework40.dll" size="19286624">
+      <assemblyIdentity name="DynamicPDF.NETFramework40" version="11.11.0.43757" publicKeyToken="09B5CE0D5C0A9D8B" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>D3F+n+PydjHwSNp1Ahbtvc7FN3rTxumB2/cKnpI1yZ4=</dsig:DigestValue>
+        <dsig:DigestValue>1N5/UdD5ZkSO7Q3g0ZApSM+0fpvPAlfO4HISk17q7fY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -211,62 +211,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LoggerV1.exe" size="206824">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LoggerV1.exe" size="8595432">
       <assemblyIdentity name="LoggerV1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gdsbGeLU67ixFzumcm6iZE6pMw/MFS//Ndc9UCsnFuw=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Interop.Word.dll" size="949992">
-      <assemblyIdentity name="Microsoft.Office.Interop.Word" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2tbDAqICW69vlq4SgloPt6uq0PnNSuhPN0iZ6Ocp2X0=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Vbe.Interop.dll" size="64112">
-      <assemblyIdentity name="Microsoft.Vbe.Interop" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>C58+lI+eFiMQtdooV6td2VA1j8eW85DkxUpRwPyYLP8=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="office.dll" size="457328">
-      <assemblyIdentity name="office" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>3ByTN0Nfo3IB27jAEuA5fgobrnJzMFyjl/7tVmug+ek=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stdole.dll" size="25480">
-      <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0EgKT/paYFTiLbpeZ8jQ55eyeuyDJfBW1GanbCTeUpY=</dsig:DigestValue>
+        <dsig:DigestValue>2mDUeoTzWjhh+1USzW4xKwFU8ZneayDfL9CqPsqW3Gw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -279,31 +231,57 @@
       <dsig:DigestValue>QC0qbW5u//gK1sPaNLO8S+0MqCtz5jBEnGp41se9594=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="LOGGER.mdf" size="8388608" writeableType="applicationData">
+  <file name="LOGGER.mdf" size="8388608">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>vQLnnQYcCKkRn2O+2Atw5QMjqc+ukUaurOwihr15jg8=</dsig:DigestValue>
+      <dsig:DigestValue>95OybxRJJXDV739ynOZ5mZMZ5Vn/RGj0vfePQoRoHe8=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="LOGGER_log.ldf" size="516096" writeableType="applicationData">
+  <file name="LOGGER_log.ldf" size="8388608">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>WuFAJfogHLqipmv5Qxkav9H9kvH9HOXWvgB5OjDw1zY=</dsig:DigestValue>
+      <dsig:DigestValue>1+GVhvsMd/76cCaDy9+Zw2MNSNsyLMmcnmvLpz34lrk=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="LoggerV1.exe.config" size="891">
+  <file name="LoggerV1.exe.config" size="879">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>MDSAjvsPI47xt8qOLMu0/HdpIpZO2gZrfInHjsVpakM=</dsig:DigestValue>
+      <dsig:DigestValue>Uvo55/8VTvKzqYYY4m7na4WnCaxwt6wBxknyqqnrH5o=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Resources\LOGGER_log.ldf" size="786432">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/n7Hm3i4rfQmPA5qF4Y4/zRqxQlYr+SFvJ2JSL3iOK4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
 </asmv1:assembly>
