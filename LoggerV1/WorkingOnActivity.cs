@@ -77,7 +77,7 @@ namespace LoggerV1
         }
         private int MinutesSpent() //Calculates amounts of minutes
         {
-            return minutes + 6 * hours;
+            return minutes + 60 * hours;
         }
         private void btnEnd_Click(object sender, EventArgs e) // Finish & Log Activity [btn]
         {
